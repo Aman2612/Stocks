@@ -104,7 +104,7 @@ public class StockAsync extends AsyncTask<String,Void,ArrayList<StockDetails>> {
         super.onPostExecute(courses);
         if (listener != null)
             listener.onDownloadComplete(courses);
-        // we should pass this list to CourseListActivity
+       
     }
 
     public interface CourseDownloadListener {
